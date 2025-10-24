@@ -1,0 +1,18 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ main ]  # Run on pushes to the main branch
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  # Run on Ubuntu virtual machine
+
+    steps:
+      - uses: actions/checkout@v3  # Checkout code from the repository
+
+      - name: Install dependencies
+        run: echo "No dependencies to install for this simple site"  # placeholder
+
+      - name: Run tests
+        run: echo "Running basic validation tests..."  # placeholder
